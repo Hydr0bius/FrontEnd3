@@ -291,9 +291,144 @@ header .right .account{
     opacity: 1;
 }
 /* guide section style ========== */
+.guide{
+    padding: 100px 0;
+}
+.guide .heading{
+    width: 460px;
+    max-width: 100%;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+.guide .heading .headline{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--clr-title);
+    margin-bottom: 20px;
+    position: relative;
+}
+.guide .heading .headline::before{
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--clr-title);
 
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%); /*center aling horizontallly vy removing half of the width of the element*/
+}
+.guide .heading .text{
+    line-height: 1.8;
+}
+.guide .steps{
+    width: 685px;
+    max-width: 100%;
+    margin: 0 auto 48px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+    justify-items: center;
+}
+.guide .steps .card{
+    text-align: center;
+}
+.guide .steps .card h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 18px 0 10px;
+}
+.guide .steps .card .btn{
+    padding: 0;
+    color: var(--clr-light-blue);
+}
+.guide .steps .card .btn i{
+    font-size: 1.1rem;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.guide .action{
+    text-align: center;
+}
 /* properties list style ========== */
+.property{
+    padding: 100px 0;
+    background-color: #f5fafe;
+}
+.property .top{
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 60px;
+    align-items: flex-end;
+}
+.property .top h3{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--clr-title);
+    margin-bottom: 8px;
+}
+.property .top .btn-line{
+    padding: 0;
+    color: var(--clr-light-blue);
+}
+.property .top .btn-line{
+    font-size: 1.1rem;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.property .list{
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.property .list .card{
+    background-color: var(--clr-white);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.property .list .card:hover{
+    box-shadow: 0 45px 80px rgba(0,0,0,0.04);
+}
+.property .list .placeholder{
+    width: 100%;
+    height: 230px;
+    background-color: var(--clr-light-blue);
+    background-image: url(./img/property/property-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
 
+    transition-duration: 0.3s;
+    transition-property: background-size box-shadow;
+}
+.property .list .card:nth-child(1) .placeholder{
+    background-image: url(./img/property/property-1.jpg);
+}
+.property .list .card:nth-child(2) .placeholder{
+    background-image: url(./img/property/property-2.jpg);
+}
+.property .list .card:nth-child(3) .placeholder{
+    background-image: url(./img/property/property-3.jpg);
+}
+.property .list .card:hover .placeholder{
+    background-size: 130%;
+}
+.property .list .bottom{
+    padding: 20px;
+}
+.property .list .bottom h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--clr-primary);
+}
+.property .list .bottom p{
+    font-size: 14px;
+    font-weight: 500;
+    color:  var(--clr-text-light-80);
+    margin: 8px 0;
+}
 /* progress section style ========== */
 
 /* style for newsletter ========== */

@@ -7,6 +7,9 @@
     }
   
     /* guide section style ========== */
+    .guide .steps{
+      grid-template-columns: repeat(3, 1fr);
+  }
   
     /* increase font size of progress done  */
   }
