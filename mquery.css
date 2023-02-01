@@ -12,6 +12,9 @@
   }
   
     /* increase font size of progress done  */
+    .progress .done span{
+      font-size: 58px;
+  }
   }
   
   @media screen and (min-width: 700px) {
@@ -21,6 +24,18 @@
     }
   
     /* setup placeholder image  */
+    .newsletter .container{
+      height: 365px;
+      padding: 60px 80px;
+  }
+  .newsletter .placeholder{
+    display: block;
+    max-width: 42%;
+
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+}
   
     /* footer top  */
   
