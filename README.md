@@ -9,3 +9,10 @@ Diseño de **Coder Mj** del tutorial en youtube  [Link](https://www.youtube.com/
 * [ ] CSS
 * [ ] Js
 * [ ] Responsive
+
+
+[Link](https://hydr0bius.github.io/coming-soon/) de la página.
+
+ La portada de la página queda de la siguiente manera:
+
+![Portada](img/besnikTutorial.png)
