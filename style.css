@@ -118,6 +118,14 @@ header{
     left: 0;
     right: 0;
     z-index: 5;
+
+    transition-duration: 0.3s;
+    transition-property: padding background-color;
+}
+header.sticky{
+    padding: 12px 0;
+    background-color: #c0cee3;
+    box-shadow: 0 0 5px #c0cee3;
 }
 header .container{
     width: 1300px;
@@ -528,3 +536,61 @@ header .right .account{
     display: none;
 }
 /* footer section style ========== */
+footer {
+    padding: 40px 0;
+}
+footer .top{
+    margin-bottom: 40px;
+    display: grid;
+    gap:  32px;
+    grid-template-columns: repeat(2, 1fr);
+}
+footer .box h5 a{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--clr-secondary);
+    margin-bottom: 24px;
+}
+footer .box .links span{
+    display: block;
+    margin: 12px 0;
+}
+footer .box .links span a{
+    color: var(--clr-text-light);
+}
+footer .box .links span:hover a{
+    text-decoration: underline;
+    color: var(--clr-secondary);
+    transform: translateX(5px);
+}
+footer .connect{
+    max-width: 250px;
+}
+footer .connect p{
+    color: var(--clr-text-light-80);
+    margin-bottom: 24px;
+}
+footer .connect .social a{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-color: #ddd;
+    padding-top: 3px;
+    border-radius: 3px;
+    text-align: center;
+    color: var(--clr-text-light);
+    font-size: 1.1rem;
+    transition-duration: 0.3s;
+    transition-property: color background-color;
+}
+footer .connect .social a:hover{
+    background-color: var(--clr-light-blue);
+    color: var(--clr-white);
+}
+footer .bottom{
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-between;
+}

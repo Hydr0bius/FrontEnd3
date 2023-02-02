@@ -38,8 +38,17 @@
 }
   
     /* footer top  */
+    footer .top{
+      grid-template-columns: repeat(4, 1fr);
+  }
   
     /* footer bottom */
+    footer .bottom{
+      grid-template-columns: 1fr 2fr;
+  }
+    footer .bottom{
+      text-align: right;
+    }
   }
   
   @media screen and (min-width: 850px) {
